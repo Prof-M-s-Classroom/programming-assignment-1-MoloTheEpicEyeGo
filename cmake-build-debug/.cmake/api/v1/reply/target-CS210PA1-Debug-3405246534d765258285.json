@@ -2,7 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "CS210PA1"
+			"path" : "CS210PA1.exe"
+		},
+		{
+			"path" : "CS210PA1.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -35,10 +38,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fcolor-diagnostics"
-				},
-				{
-					"fragment" : "-std=gnu++2b"
+					"fragment" : "-g -std=gnu++23 -fdiagnostics-color=always"
 				}
 			],
 			"language" : "CXX",
@@ -69,12 +69,16 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
 	"name" : "CS210PA1",
-	"nameOnDisk" : "CS210PA1",
+	"nameOnDisk" : "CS210PA1.exe",
 	"paths" : 
 	{
 		"build" : ".",

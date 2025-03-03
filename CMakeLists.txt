@@ -3,4 +3,5 @@ project(CS210PA1)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(CS210PA1 main.cpp SpaceRoute.cpp SpaceRoute.h)
+add_executable(CS210PA1 main.cpp SpaceRoute.cpp SpaceRoute.h
+)
